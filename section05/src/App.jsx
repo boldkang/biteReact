@@ -3,18 +3,29 @@ import './App.css'
 import Header from './components/Header.jsx'//확장자를 안붙여도 됨 여기서는
 import Main from './components/Main.jsx'
 import Footer from './components/Footer.jsx'
-
+import Button from './components/Button.jsx'
 
 
 
 function App() {//부모 컴포넌트: 조상 Root 컴포넌트
-
+  const buttonProps = {
+    text: "카페",
+    color: "red",
+    a: 1,
+    location: "London",
+  }
+  //Props: 부모 컴포넌트에서 자식 컴포넌트로 넘기는 값
   return (
     <>
       <Header />
       <h1> 안녕 리액트! </h1>
       <Main />
       <Footer />
+      <Button text = {"메일"} color = "blue" /> 
+      <Button {...buttonProps}/>
+      <Button text = {"블로그"}> 
+        <Header />  
+      </Button> 
     </>
   )
 }
