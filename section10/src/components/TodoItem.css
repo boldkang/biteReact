@@ -1,0 +1,29 @@
+.TodoItem {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  border: solid 1px rgb(210, 210, 210);
+  padding: 8px 4px;
+  border-radius: 8px;
+
+}
+
+.TodoItem input {
+  width: 16px;
+}
+
+.TodoItem .content {
+  flex: 1;
+}
+
+.TodoItem .date {
+  padding: 0 8px;
+  color: grey;
+}
+
+.TodoItem .remove {
+  border-style: none;
+  padding: 8px 12px;
+  color: grey;
+   cursor: pointer;
+}
